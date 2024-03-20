@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Encriptador de Texto</title>
+    <link rel="icon" href="img/logoF.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="head">
+        <img id="logo" src="img/aluraoracle.png">
+    </header>
+    <div>
+        <h2 class="titulo-principal"> Reto Encriptador </h2> 
+    </div>
+    <main class="container">
+        <section class="text">
+            <textarea id="text" placeholder="Escribe el mensaje a encriptar..."></textarea>
+            <button class="btn" id="encrypt" onclick="codificar()">Encriptar</button>
+            <button class="btn" id="decrypt" onclick="decodificar()"> Desencriptar</button>
+            <button class="btn" id="reset" onclick="reiniciar()">Reiniciar</button>
+        </section>
+
+        <section class="result">
+            <div id="result">
+                <img id="perrito" src="img/perrito.png" class="imagen-perrito">
+                <h3> Aquí estará el mensaje encriptado/desencriptoado  </h3> 
+            </div>
+            <button class="btn copyBtn" onclick="copiarTexto()">Copiar Texto</button>
+        </section>     
+    </main>
+    
+    <footer class="footer">
+        <samp>Realizado por Abril Pacheco Espinosa</samp>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
